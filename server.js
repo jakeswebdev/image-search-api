@@ -13,7 +13,8 @@ mongo.connect(dbUri,function(err,database){
     const collection = myDB.collection('search-collection');
     if(err){
         console.log('cant connect to db');
-    }    
+    }
+    app.use('/public',express.static(__dirname + '/public'));    
     app.get('/search/:imgstr*',function(request,response){
         let imagestring = request.params.imgstr;
         let searchUri = gUri + '&q=' + imagestring;
