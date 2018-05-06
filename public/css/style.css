@@ -1,0 +1,52 @@
+body{
+    background-color:#5DB5A4;
+}
+
+.parent{
+    height:100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin:0 auto;
+    
+}
+
+.child{
+    word-wrap: break-word;
+    width: 60%;  /* Or whatever */
+    height: auto; /* Or whatever */
+    margin: auto;  /* Magic! */
+    background-color: #3C989E;
+    color:white;
+    
+}
+
+h2{
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    padding-bottom:10px;
+}
+ 
+p{
+    padding:1.5px ;
+    padding-left:10px;
+    font-family: 'Sanchez', serif;  
+    font-size:1.2em;
+    
+}
+
+li{
+    
+    font-family: 'Sanchez', serif;
+    font-size:1.2em;
+}
+
+/*span{
+    background-color: grey;
+}*/
+
+@media screen and (max-width:1024px){
+    .child{
+        width:90%;
+        font-size:2em;
+    }
+}
