@@ -4,6 +4,7 @@ const https = require('https');
 const mongo = require('mongodb').MongoClient;
 const app = express();
 const moment = require('moment');
+const path = require('path');
 let gUri = 'https://www.googleapis.com/customsearch/v1?key=' + process.env.GKEY + '&cx=' + process.env.CX + '&searchType=image' ;
 let dbUri = 'mongodb://' + process.env.DBUSER + ':' + process.env.DBPASS + '@ds113200.mlab.com:13200/search-term-db';
 
