@@ -58,6 +58,9 @@ mongo.connect(dbUri,function(err,database){
             response.json(dataJson);
         })
     });
+    app.get('/',function(request,response){
+        response.sendFile(path.join(__dirname + '/index.html'));
+    })
 })
 
 
