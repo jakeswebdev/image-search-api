@@ -1,0 +1,33 @@
+{
+  "name": "image-search",
+  "version": "1.0.0",
+  "description": "API that returns a JSON with images related to a search string.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeswebdev/image-search-api.git"
+  },
+  "keywords": [
+    "image",
+    "search",
+    "api",
+    "json",
+    "fcc"
+  ],
+  "author": "Jacobo Benzaquen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeswebdev/image-search-api/issues"
+  },
+  "homepage": "https://github.com/jakeswebdev/image-search-api#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "moment": "^2.22.1",
+    "mongodb": "^3.0.7"
+  }
+}
